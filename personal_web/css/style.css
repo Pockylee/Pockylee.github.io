@@ -537,17 +537,17 @@ img{
 }
 
 .skills_python{
-    width: 85%;
+    width: 80%;
 }
 
 .skills_cplus{
-    width: 80%;
+    width: 75%;
 }
 .skills_php{
     width: 75%;
 }
 .skills_verilog{
-    width: 65%;
+    width: 55%;
 }
 
 .skills_drug{
@@ -565,16 +565,16 @@ img{
 }
 
 .skills_html{
-    width: 85%;
+    width: 75%;
 }
 .skills_css{
-    width: 80%;
+    width: 70%;
 }
 .skills_js{
-    width: 70%;
+    width: 65%;
 }
 .skills_bootstrap{
-    width: 70%;
+    width: 65%;
 }
 
 .skills_close .skills_list{
@@ -1287,7 +1287,7 @@ img{
     .footer_links{
         flex-direction: row;
         column-gap: 2rem;
-        
+
 
     }
     .footer_socials{
