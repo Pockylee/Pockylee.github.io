@@ -1287,6 +1287,7 @@ img{
     .footer_links{
         flex-direction: row;
         column-gap: 2rem;
+        
 
     }
     .footer_socials{
@@ -1332,9 +1333,9 @@ img{
     .swiper-button-next{
         right: -3.5rem;
     }
-    .swiper-container-horizontal > .swiper-pagination-bullets{
-        bottom: -4.5rem;
-    }
+    /*.swiper-container-horizontal > .swiper-pagination-bullets{*/
+        /*bottom: -4.5rem;*/
+    /*}*/
     .contact_form{
         width: 460px;
 
