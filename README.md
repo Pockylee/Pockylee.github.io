@@ -5,7 +5,7 @@ Welcome aboard, I'm still new to frontend and backend web developing, most of th
 Keep Going!!!
 :)
 
-#Brian's Personal Webiste
+# Brian's Personal Webiste
 ## My first personal responsive website
 ### Reference : https://www.youtube.com/channel/UCgkDs77BoEhMIgRUB4MKrtQ
 ### Youtube.  : Bedimcode
