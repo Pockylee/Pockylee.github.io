@@ -1,0 +1,160 @@
+/* Add your custom styles here */
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+} */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.banner {
+    background-image: url('../img/image3.png');
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+#services, #testimonials, #gallery {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer address, footer p {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 30%; /* Adjust the width of the main content */
+    color: #fff;
+    padding: 40px;
+    background-image: url('../img/flower.png');
+    background-position: center;
+    justify-content: center;
+}
+
+.main-content {
+    width: 70%; /* Adjust the width of the main content */
+    background-image: url('../img/image1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.lower-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; /* 100% for each image */
+    z-index: 1; /* Lower layer z-index set to be below the upper layer */
+}
+
+.background-image {
+    width: 100%;
+    height: 50%; /* Each image takes up half the height of the lower layer */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* This allows the background images to scroll */
+}
+
+.first-image {
+    background-image: url('../img/image3.png'); /* Replace with your first image path */
+}
+
+.second-image {
+    background-image: url('../img/image2.png'); /* Replace with your second image path */
+    position: absolute;
+    top: 100%; /* Position the second image right below the first one */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling on the body directly */
+}
+
+.lower-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; /* 100% for each image */
+    z-index: 1; /* Lower layer z-index set to be below the upper layer */
+}
+
+
+.upper-layer {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Viewport height to contain the scrolling content */
+    z-index: 2; /* Ensures the upper layer scrolls over the lower layer */
+    overflow-y: auto; /* Enables scrolling on the upper layer */
+    background: transparent; /* Make it transparent to see the lower layer */
+}
+
+.scrolling-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: adds depth to the content blocks */
+    /* Add more styling as needed */
+}

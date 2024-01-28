@@ -1,0 +1,272 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    
+    background-image: url('../img/image3.png');
+    background-size: cover;
+    background-position: center;
+    height: 950px; /* Adjust the height as necessary */
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    /* position: fixed; */
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgba(256, 256, 256, 1); /* Semi-transparent background */
+}
+
+.brand-title {
+    font-size: 1.0em;
+    color: #d2b48c;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 0 20px;
+}
+
+.navbar-links a {
+    transition: color 0.3s ease;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: #ffcc00; /* Adjust the color to fit your design */
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links li {
+        padding: 10px 0;
+    }
+}
+
+.services-section {
+    display: flex;
+    padding: 50px 10%;
+    box-sizing: border-box;
+}
+
+.services-sidebar {
+    background: url('../img/flower.png') center;
+    flex: 1; /* Flex-grow to take the necessary space */
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.services-sidebar button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.services-sidebar button:hover {
+    background: #fff;
+    color: #d2b48c;
+}
+
+.services-image {
+    flex: 2; /* Flex-grow to take the necessary space */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.services-image img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+.testimonial-section {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.quote {
+    font-style: italic;
+    font-size: xx-large;
+    color: #333; /* Or any color that fits the design */
+}
+
+.author {
+    color: #d3b48c; /* Or any color that fits the design */
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+    }
+
+    .services-sidebar, .services-image {
+        width: 100%;
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .services-image img {
+        max-width: 100%;
+    }
+
+    .testimonial-section {
+        padding: 20px;
+    }
+}
+
+
+.main-content {
+    position: relative;
+    background-position: center center;
+    background: url('../img/image2.png');
+    background-size: cover;
+    height: 600px; /* Adjust height as needed */
+    width: 900px;
+}
+
+.background-image {
+    position: fixed;
+    width: 80%;
+    height: 80vh; /* Adjust height to match the main content if needed */
+    /* object-fit: cover; Ensures the image covers the area without stretching */
+}
+
+/* Overlay content styling */
+.overlay-content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    right: 10%; /* Adjust as needed */
+    width: 25%; /* Adjust width as needed */
+    /* width: 100%; */
+    height: 30vh;
+    background: url('../img/flower.png') center; /* Adjust background color as needed */
+    padding: 2em;
+    box-sizing: border-box;
+    transform: translateY(-50%); /* Center vertically */
+    text-align: center;
+}
+
+.overlay-content h2,
+.overlay-content p {
+    margin: 0 0 1em; /* Add space between the text and the button */
+    color: white; /* Set text color */
+}
+
+.overlay-content button {
+    border: 2px solid white; /* Button border */
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white; /* Button text color */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .overlay-content {
+        position: static;
+        width: auto; /* Take the full width of the screen on small devices */
+        margin: 0;
+        transform: none;
+        padding: 1em;
+    }
+
+    .background-image {
+        height: auto;
+    }
+}
+
+.site-footer {
+    background-color: #d2b48c; /* Example color */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    height: 150px;
+    justify-content: space-around; /* Distributes space evenly around items */
+    align-items: center;
+    font-size: 0.9em; /* Adjust the font size as needed */
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    max-width: 1680px; /* Adjust to the max width of your design */
+    margin: 0 auto;
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+.footer-address, .footer-contact, .footer-copy {
+    margin-right: 200px; /* Adjust spacing as needed */
+}
+
+.footer-button button {
+    border: 2px solid white; /* Button border */
+    background: transparent;
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footer-button button:hover {
+    background-color: white; /* Background color on hover */
+    color: #d2b48c; /* Text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-address, .footer-contact, .footer-copy, .footer-button {
+        margin: 5px 0; /* Adjust margin for stacked layout */
+    }
+}
